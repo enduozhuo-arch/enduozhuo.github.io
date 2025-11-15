@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個人網頁排版</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+  <body>
+   <!-- <audio controls>
+        <source src="Angela.mp3" type="audio/mp3">
+        你的瀏覽器不支援 audio 標籤。
+    </audio>
+    -->
+      
+    <nav>
+        <a href="#aboutme">關於我 About me</a>
+        <a href="#skills">專業技能 Professional skills</a>
+        <a href="#experience">個人經歷 Personal experience</a>
+        <a href="#contact">聯絡資訊 contact information</a>
+    </nav>
+
+    <header class="my-header">
+        You will become whatever you want to be.
+    </header>
+
+
+    <!--區塊 1: 關於我-->
+    <article class="aboutme-area-container" id="aboutme">
+       
+        <aside> 
+          <h1>關於我</h1>
+          <img src="https://picsum.photos/200/200?random=10" style="border-radius: 50%"/>
+          <br>
+          <p style="font-weight:bold ;color:#444;font-size:30px">卓恩多</p>
+          <p style="font-weight:bold ;color:#444 ;font-size:20px">En-Duo,Zhuo</p>
+        </aside>
+
+        <!-- 底部三個卡片-->
+        <section class="card">
+          <h3>簡介</h3>
+          <p>
+            <ul>
+                <li>就讀於中原大學資管系</li>
+                <li>曾於茂林光電科技股份有限公司從事電子測試的職務</li>
+                <li>中壢高商第68屆校長獎</li>
+                <li>中壢高商112年班級優秀青年</li>
+            </ul>
+          </p>
+        </section>
+
+        <section class="card">
+          <h3>個人特質</h3>
+          <p>
+            <ul>
+                <li>喜歡學習新技術、動手解決問題、參與專案，並持續提升技術深度。</li>
+                <li>具備良好溝通能力，能快速理解需求並在團隊合作中保持順暢交流。</li>
+                <li>具有高度責任感與自我管理能力，能在期限內穩定完成任務。</li>
+            </ul>
+          </p>
+        </section>
+
+        <section class="card">
+          <h3>優勢</h3>
+          <p>
+            <ul>
+                <li>熟悉基本前後端語法與資料處理，具備邏輯思考與問題排查能力。</li>
+                <li>擁有實作經驗與快速學習能力，能在新領域中迅速上手並應用於專案。</li>
+                <li>對專案開發流程具有基本理解，能主動整理需求、規劃任務並確保進度穩定推進。</li>
+            </ul>
+          </p>
+        </section>
+    </article>
+    
+    <!-- 區塊 2: 專業技能-->
+    <acticle id="skills" class="skill-area-container">
+        <h1>專業技能</h1>
+        <div class="two-column-grid">
+            
+            <!-- 左欄: 證照 -->
+            <section class="cert-section">
+                <h3>證照</h3>
+                <div class="cert-grid">
+                    <!-- 證照項目 1-6 -->
+                    <div class="cert-item">
+                        <img src="https://picsum.photos/200/200?random=10" class="icon"/>
+                        <p class="text-label">中華民國技術士證丙級-電腦軟體應用</p>
+                    </div>
+                    <div class="cert-item">
+                        <img src="https://picsum.photos/200/200?random=10" class="icon"/>
+                        <p class="text-label">中華民國技術士證丙級-會計事務資訊</p>
+                    </div>
+                    <div class="cert-item">
+                        <img src="https://picsum.photos/200/200?random=10" class="icon"/>
+                        <p class="text-label">中華民國技術士證丙級-會計事務人工記帳</p>
+                    </div>
+                    <div class="cert-item">
+                        <img src="https://picsum.photos/200/200?random=10" class="icon"/>
+                        <p class="text-label">中華民國技術士證丙級-門市服務</p>
+                    </div>
+                    <div class="cert-item">
+                        <img src="https://picsum.photos/200/200?random=10" class="icon"/>
+                        <p class="text-label">
+                            中華民國商業職業教育學會-會計能力測驗三級</p>
+                    </div>
+                    <div class="cert-item">
+                        <img src="https://picsum.photos/200/200?random=10" class="icon"/>
+                        <p class="text-label">
+                            中華民國商業職業教育學會-會計能力測驗二級</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 右欄: 程式技能-->
+            <section class="skill-section">
+                <h3>軟體與程式技能</h3>
+                <div class="skill-list">
+                    <!-- 技能條目 1-5 -->
+                    <div class="skill-item">
+                        <span class="skill-label">HTML/CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width:85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">Java</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">Python</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">Cisco Packet Tracer</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">Gephi</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </acticle>
+
+    <!-- 區塊3:個人經歷 -->
+<article id="experience">
+    <h1>個人經歷</h1>
+    
+    <input type="radio" id="p1" name="page" checked>
+    <input type="radio" id="p2" name="page">
+    <input type="radio" id="p3" name="page">
+    <input type="radio" id="p4" name="page">
+    <input type="radio" id="p5" name="page">
+    <input type="radio" id="p6" name="page">
+
+    <div class="slider">
+
+        <!-- 第 1 頁箭頭 -->
+        <label class="arrow left a1" for="p6">‹</label>
+        <label class="arrow right a1" for="p2">›</label>
+
+        <!-- 第 2 頁箭頭 -->
+        <label class="arrow left a2" for="p1">‹</label>
+        <label class="arrow right a2" for="p3">›</label>
+
+        <!-- 第 3 頁箭頭 -->
+        <label class="arrow left a3" for="p2">‹</label>
+        <label class="arrow right a3" for="p4">›</label>
+
+        <!-- 第 4 頁箭頭 -->
+        <label class="arrow left a4" for="p3">‹</label>
+        <label class="arrow right a4" for="p5">›</label>
+
+        <!-- 第 5 頁箭頭 -->
+        <label class="arrow left a5" for="p4">‹</label>
+        <label class="arrow right a5" for="p6">›</label>
+
+       
+
+        <div class="pages">
+            <div class="page page1">
+                <img src="https://picsum.photos/200/200?random=10" class="photo"/>
+                <div class="text">透過英文播報影片的方式介紹中原資管系，我從中收穫了清晰表達與資訊統整的能力。為了讓內容更易懂，我不斷練習將複雜的課程特色濃縮成重點。此外，這次經驗也讓我更深入了解資管系的核心價值，並學會在團隊協作中有效溝通與調整分工。這段經歷讓我在表達力與專業理解上都有明顯成長。</div>
+            </div>
+
+            <div class="page page2">
+                <img src="https://picsum.photos/200/200?random=10" class="photo"/>
+                <div class="text">在企業資料通訊的課程中使用cisco packet tracer模擬、設計電腦網路，學習建立網路拓撲，並透過指令介面模擬路由器、交換機等設備的組態設定，它讓我練習和排除網路問題。</div>
+            </div>
+
+            <div class="page page3">
+                <img src="https://picsum.photos/200/200?random=10" class="photo"/>
+                <div class="text">在規劃桃園一日遊專案的過程中，我負責開發 LINE Bot。為了提升使用者體驗，我不斷調整版面與互動流程，讓資訊更直覺易讀；同時也透過社群貼文與活動規劃，增加專案曝光度與參與度。累積了使用者互動設計與數位行銷的實務能力，也更理解完整專案從規劃到上線的流程。</div>
+            </div>
+
+            <div class="page page4">
+                <img src="https://picsum.photos/200/200?random=10" class="photo"/>
+                <div class="text">在操作 Gephi 的過程中，我學會了如何將複雜資料視覺化，並透過節點與連結探索資料之間的隱性關係。實作中，我理解了版圖演算法、中心性指標與社群偵測等概念，讓我能更精準地解讀網路結構。這項工具不只提升了我處理資料的能力，也讓我在分析資訊時更具邏輯與洞察力。</div>
+            </div>
+
+            <div class="page page5">
+                <img src="https://picsum.photos/200/200?random=10" class="photo"/>
+                <div class="text">在貓咪流浪之家服務的經驗，讓我學到責任感與細心的重要性。協助清潔環境、補充飼料與觀察貓咪狀態時，我體會到每個小細節都會影響牠們的安全與健康。此外，與組員們合作也讓我理解團隊分工的效率與價值。這段服務不僅培養了我耐心，也讓我更願意主動付出，並對生命議題有更深的同理心。</div>
+            </div>
+
+            
+        </div>
+
+        <!-- 底部圓點 -->
+        <div class="dots">
+            <label for="p1"></label>
+            <label for="p2"></label>
+            <label for="p3"></label>
+            <label for="p4"></label>
+            <label for="p5"></label>
+
+        </div>
+
+    </div>
+</article>
+
+    <!--區塊4:聯絡資訊 -->
+    <section class="contact-info-section">
+        <h2 class="section-title" id="contact">聯絡資訊</h2>
+        <div class="contact-buttons-container">
+            <a href="https://www.instagram.com/zhuo.0126?igsh=cjE4MnA4ZHNlNXps" target="_blank" class="contact-button">Instagram</a>
+            <a href="mailto:enduozhuo@gmail.com" class="contact-button"> Email</a>
+            <a href="https://line.me/ti/p/dWFOYlPMQg" target="_blank" class="contact-button">Line</a>
+        </div>
+    </section>
+    <footer>
+        <h5>Copyright @ 2025 All rights reserved</h5>
+    </footer>
+
+</body>
+</html>

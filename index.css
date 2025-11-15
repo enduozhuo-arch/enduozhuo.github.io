@@ -1,0 +1,460 @@
+body{
+    /*背景圖*/
+    background-image:url(background-image.jpg) ;
+    background-size: cover;
+    margin:0px;
+}
+*{
+    box-sizing:border-box;
+    margin:0px auto;
+}
+*:not(.progress-bar) {
+    margin: 1px;
+    /*padding: 5px;*/
+}
+
+header{
+    background-image: url(pexels-pixabay-220182.jpg);
+    background-size: cover; 
+    background-attachment: fixed; /* 讓圖片固定在視窗中，捲動頁面時 header 圖片看起來不會移動 */
+    background-position: center center; /* 設定圖片的起始位置，這裡設為置中 */
+    min-height: 300px; /* 設定 header 區塊的高度 */
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center ;
+    margin: 0px;
+    padding: 20px;
+}
+.my-header {
+    width: 100%;
+    height: 120px;           /* header 高度 */
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center;     /* 垂直置中 */
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f7f7f7;
+    padding-top: 50px; 
+}
+
+    
+nav{
+    position: fixed; 
+    top: 0;          
+    left: 0;
+    width: 100%;   
+    background-color: #b7b5b6;
+    font-family: Arial;
+    text-align: center;
+}
+nav a{
+    padding: 14px 16px;
+    color: #444444;
+    font-weight: bold;
+    display: inline-block; /*元素在網頁上如何顯示*/
+}
+nav a:hover{ /*感應滑鼠*/
+    background-color: #656263;
+    color: white;
+}
+footer{
+    background-color: #b7b5b6;
+    color: #444444;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+        
+/* 區塊 1: 關於我 */
+       
+.aboutme-area-container {
+    padding: 20px;
+    width: 85%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+    
+aside {
+    grid-column: 1 / 4;
+    text-align: center;
+    margin-bottom: -20px;
+    padding: 40px 20px;
+}
+
+        h1{
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+img { /*大頭照*/
+    margin-top: 25px;
+    border: 4px solid white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+        
+        /* 底部三欄樣式 */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 0px; 
+            margin-bottom:80px;
+            border-radius: 10px;
+            text-align: left;
+            color: #444; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h3 {
+            color: #444; 
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+        }
+   
+/* 區塊 2: 專業技能 */
+       
+        .skill-area-container {
+            width:70%; 
+            margin: 40px auto; 
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* 雙欄內容容器 */
+        .two-column-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap:20px;
+            text-align: left; 
+        }
+
+        /* 區塊的樣式 */
+        .cert-section, .skill-section {
+            background-color: white; 
+            border: 2px solid #ddd; 
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 80px;
+        }
+        
+        /* 左欄:證照的佈局 */
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding-top: 10px;
+        }
+
+        .cert-item {
+            text-align: center;
+        }
+
+        .cert-item .icon {
+            width: 145px;
+            height: 120px;
+            line-height:80px;
+            margin: 0 auto 5px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 0.9em;
+            font-weight: bold;
+            background-color: #f0f0f0;
+            color: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        .cert-item .text-label {
+            font-size: 0.8em;
+            color: #666;
+        }
+
+
+        /*右欄: 程式技能 */
+        .skill-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-top: 10px;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .skill-label {
+            flex-shrink: 0;
+            width: 80px;
+            margin-right: 15px;
+            font-weight: bold;
+            color: #666;
+            font-size: 1em;
+            text-align: left;
+        }
+
+        .progress-bar {
+            min-width: 0;
+            flex-grow: 1; 
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
+
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: #656263;
+            display:block;
+            transition: width 0.8s ease-in-out;
+           
+        }
+
+        /*區塊3:個人經歷*/
+        .slider {
+            position: relative;
+            width:80%; 
+            margin: 40px auto; 
+            margin-bottom: 80px;
+            background-color: white; 
+            border: 2px solid #ddd; 
+            padding: 20px;
+            border-radius: 30px;
+            height: 400px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          /* 隱藏 radio */
+          input[type="radio"] {
+            display: none;
+          }
+          
+          /* 頁面容器 */
+          .pages {
+            position: relative;
+            width: 100%;
+            height: 100%;
+          }
+          
+          /* 每一頁 */
+          .page {
+            position: absolute;
+            inset: 0;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            justify-content: flex-start;
+          }
+          .page {
+            display: flex;
+            justify-content: flex-start; /* 靠左 */
+            align-items: center;         /* 垂直置中 */
+            gap: 20px;                    /* 圖片與文字間距 */
+            text-align: left;
+            padding-left: 20px;           /* 讓內容不貼邊 */
+        }
+          
+          /* 顯示中頁面 */
+          #p1:checked ~ .slider .pages .page1,
+          #p2:checked ~ .slider .pages .page2,
+          #p3:checked ~ .slider .pages .page3,
+          #p4:checked ~ .slider .pages .page4,
+          #p5:checked ~ .slider .pages .page5
+           {
+            display: flex;
+            opacity: 1;
+          }
+
+.photo{
+            width: 350px;
+            height: 250px;
+            margin: 0 100px 5px 50px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            color: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+}
+
+          /* 左右箭頭 */
+          .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 36px;
+            cursor: pointer;
+            user-select: none;
+            z-index: 9999;
+          }
+          
+          .arrow.left { left: 30px; }
+          .arrow.right { right: 30px; }
+
+.arrow {
+display: none;
+}
+.text{
+    width:330px;
+}
+
+/* 第1頁被選取 → 顯示 a1 的箭頭 */
+#p1:checked ~ .slider .a1 { display: block; }
+
+/* 第2頁被選取 → 顯示 a2 的箭頭 */
+#p2:checked ~ .slider .a2 { display: block; }
+
+#p3:checked ~ .slider .a3 { display: block; }
+#p4:checked ~ .slider .a4 { display: block; }
+#p5:checked ~ .slider .a5 { display: block; }
+
+          
+         
+          
+          /* 底部圓點 */
+          .dots {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+          }
+          
+          .dots label {
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            margin: 0 5px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+          
+          /* 實心圓（當前頁） */
+          #p1:checked ~ .slider .dots label:nth-child(1),
+          #p2:checked ~ .slider .dots label:nth-child(2),
+          #p3:checked ~ .slider .dots label:nth-child(3),
+          #p4:checked ~ .slider .dots label:nth-child(4),
+          #p5:checked ~ .slider .dots label:nth-child(5){
+          
+            background: #000;
+          }
+
+
+         /* 區塊 4: 聯絡資訊 */
+        .contact-info-section {
+            width: 70%;
+            margin: 50px auto; /* 增加與上方區塊的間距 */
+            text-align: center;
+        }
+
+        .contact-info-section .section-title {
+            margin-bottom: 40px; /* 增加標題與按鈕的間距 */
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .contact-buttons-container {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            gap: 40px; /* 圓形按鈕之間的間距 */
+            flex-wrap: wrap; /* 允許換行以適應小螢幕 */
+        }
+
+        .contact-button {
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            width: 120px; /* 圓形直徑 */
+            height: 120px; /* 圓形直徑 */
+            border: 2px solid #525050; /* 邊框 */
+            border-radius: 50%; /* 變成圓形 */
+            text-decoration: none; /* 移除連結底線 */
+            color: #525050; /* 文字顏色 */
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s; /* hover 動畫 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 輕微陰影 */
+
+        }
+
+        .contact-button:hover {
+            background-color: #525050; /* hover 背景色 */
+            color: white; /* hover 文字色 */
+            transform: translateY(-5px); /* 輕微上浮效果 */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+
+
+        
+        /* =================================================== */
+        /* 手機版 (max-width: 800px) 調整 */
+        /* =================================================== */
+        @media screen and (max-width: 800px) {
+            /* 調整主容器寬度 */
+            .about-me-main, .skill-area-container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            /* 頂部卡片調整 */
+            aside.top-card {
+                padding: 25px 15px;
+            }
+
+            /* 底部三欄卡片變單欄 */
+            .about-me-main {
+                display: block;
+            }
+            .card {
+                margin-bottom: 20px;
+            }
+
+            /* 移除手機版分隔線樣式 */
+            .personal-card, .advantage-card {
+                border-left: none;
+                padding-left: 20px; 
+            }
+            
+            /* 專業技能區塊變單欄 */
+            .two-column-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            /* 證照內部 Grid 在手機上改為 2 欄 */
+            .cert-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .skill-label {
+                width: 70px;
+            }
+        }
+
+  
